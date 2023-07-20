@@ -1,0 +1,103 @@
+body{
+    box-sizing: border-box;
+}
+#isi{
+    margin: 5% 23% 0 23%;
+}
+h1{
+    text-align: center;
+}
+.teks{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.jenisKelamin{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0 10px 0;
+    gap: 10px;
+}
+h4{
+    margin: 0%;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.MBI-awnser{
+    margin-bottom: 20px;
+}
+.bodi{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: rgb(238, 238, 238);
+}
+.kirim{
+    color: rgb(255, 255, 255);
+    background-color: rgb(65, 169, 230);
+    width: 3cm;
+    padding: 4px 0 4px 0;
+    border: 1px solid rgb(65, 169, 230);
+    border-radius: 3px;
+}
+.reset{
+    color: rgb(0, 0, 0);
+    width: 2cm;
+    padding: 4px 0 4px 0;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 3px;
+}
+.box-1 {
+    background-color: rgb(238, 238, 238);
+    text-align: center;
+}
+.stats {
+    text-align: justify;
+}
+#footer{
+    background-color: rgb(238, 238, 238);
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.penyakit{
+    padding: 5px;
+    margin: 0;
+}
+.konsultasi{
+    color: rgb(255, 255, 255);
+    background-color: rgb(70, 165, 243);
+    width: 6cm;
+    font-weight: bold;
+    padding: 4px 0 4px 0;
+    border: 1px solid rgb(70, 165, 243);
+    border-radius: 3px;
+}
+.registrasi{
+    color: rgb(255, 255, 255);
+    background-color: rgb(49, 150, 233);
+    width: 5cm;
+    font-weight: bold;
+    padding: 4px 0 4px 0;
+    border: 1px solid rgb(49, 150, 233);
+    border-radius: 3px;
+}
+.note{
+    margin: 5px 0 5px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+.fitur{
+    margin: 5px 0 5px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}

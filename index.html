@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator MBI</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div id="isi">
+        <h1>Kalkulator MBI</h1>
+        <p class="teks">
+            Berat badan ideal adalah impian semua orang. Tidak hanya memiliki 
+            bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan 
+            kondisi tubuh yang sehat. Bagaiman denganmu? Yuk, hitung sekarang di kalkulator 
+            MBI
+        </p>
+        <div class="bodi">
+            <div>
+                <h4>Jenis Kelamin</h4>
+                <form action="" id="form1">
+                        <div class="jenisKelamin">
+                            <div class="btn">
+                                <input type="radio" name="jenisKelamin" id="Pria">
+                                <label for="Pria">Pria</label>
+                            </div>
+                            <div class="btn">
+                                <input type="radio" name="jenisKelamin" id="Wanita">
+                                <label for="Wanita">Wanita</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="input">
+                                <label for="berat badan">Berat Badan (Kg)</label>
+                                <input class="MBI-awnser" type="number" name="berat badan" id="berat" placeholder="masukan berat badan">
+                                <label for="usia">Usia (Tahun)</label>
+                                <input class="MBI-awnser" type="number" name="usia" id="usia" placeholder="masukan usia">
+                                <label for="tinggi badan">Tinggi Badan (Cm)</label>
+                                <input class="MBI-awnser" type="number" name="tinggi badan" id="tinggi" placeholder="masukan tinggi badan">
+                        </div>
+                        <div class="sumbit">
+                            <button type="submit" class="kirim">Hitung MBI</button>
+                            <button type="reset" class="reset">Reset</button>
+                        </div>
+                    </div>
+                </form>
+                
+        </div>
+        <div>
+            <h4 class="fitur">
+                Keunggulan fitur
+            </h4>
+            <p class="fitur">
+                1. Menghitung berat badan <br>
+                2. Menentukan kategori berat badan ideal atau tidak <br>
+                3. Menentukan progran pwnurunan berat badan
+            </p>
+        </div>
+        <div class="teks">
+            <div>
+                <p class="note">
+                    kalkulator ini hanya boleh digunakan oleh  orang dewasa (wanita hamil atau menyusui tidak boleh 
+                    mengandalkan penbacaan MBI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya 
+                    selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter
+                </p>
+                <p class="note">
+                    kalkulator ini akan memberilan anda gambaran tentang perbandingan berat badan anda denhan nilai 
+                    umum. Indeks Massa Tubuh (MBI) dihitung sebagai berat badan anda (dalam Kilogram) dibagi dengan 
+                    kuadrat tinggi badan anda (Meter) atau MBI = Kg/M
+                </p>
+            </div>
+        </div>
+        <div class="box-1">
+            <h2>
+                Hasil
+            </h2>
+            <p id="result"></p>
+            <p id="statusBmi"></p>
+            <h2 id="avg-res"></h2>
+        </div>
+        <div>
+            <p id="explanation" class="stats"></p>
+
+        </div>
+    </div>
+    <div id="footer">
+            <h3>
+                beberapa penyakit yang berasal dari kegemukan
+            </h3>
+            <p class="penyakit">
+                Diabetes
+            </p>
+            <p class="penyakit">
+                Sakit Jantung
+            </p>
+            <p class="penyakit">
+                Hipertensi
+            </p>
+            <p class="penyakit">
+                Osteoarthritis
+            </p>
+            <div>
+                <button class="konsultasi">Konsultasi Dokter via aplikasi</button>
+                <button class="registrasi">Registrasi online sekarang</button>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+        <script>
+            // Preventing site refresh after Form Submission
+            //test Comment
+        form1.addEventListener('submit', function (e) {
+            e.preventDefault();
+            bmiKalkulator(this);
+        });
+    </script>
+</body>
+</html>
